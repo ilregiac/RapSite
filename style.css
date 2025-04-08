@@ -1,0 +1,436 @@
+
+/*----------- ----------- SFONDI ----------- -----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Sedgwick+Ave&family=Sedgwick+Ave+Display&display=swap');
+
+.finger-paint-regular {
+    font-family: "Finger Paint", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sedgwick-ave-display-regular {
+    font-family: "Sedgwick Ave Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sedgwick-ave-regular {
+    font-family: "Sedgwick Ave", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*----------- ----------- STILE BASE ----------- -----------*/
+
+body {
+    font-family: "Sedgwick Ave Display", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    filter: blur(10px) brightness(0.5) saturate(10%);
+    -webkit-filter: blur(10px) brightness(0.5) saturate(10%);    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.h2 {
+    color: #ffffff;
+    text-shadow: #000000 2px 2px;
+    font-family: "Macondo", sans-serif;
+    font-size: 2.5rem;
+}
+
+.p {
+    color: #ffffff;
+    text-shadow: #000000 2px 2px;
+    font-family: "Macondo", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+
+
+/*----------- ----------- STANZE ----------- -----------*/
+
+/*----------- Stanza Storia -----------*/
+
+body.stanza-storia {
+    background-color: #000;
+    background-image: url('rap_background_2.jpg');
+    background-size: 20rem auto;
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: local;
+}
+
+body.stanza-storia::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('rap_background_2.jpg');
+    background-size: 33.33% auto;
+    background-repeat: repeat;
+    background-position: top left;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    z-index: -1;
+    opacity: 0.7;
+    will-change: transform;
+}
+
+
+
+
+/*----------- ----------- SFONDI ----------- -----------*/
+
+body.stanza-index {
+    background-image: url('rap_background.jpg');
+}
+
+body.stanza-index::before {
+    background-image: url('rap_background.jpg');
+}
+
+/* Stanza: Descrizione */
+body.stanza-descrizione {
+    background-image: url('descrizione_background.jpg');
+}
+
+body.stanza-descrizione::before {
+    background-image: url('descrizione_background.jpg');
+}
+
+/* Stanza: Autori Americani */
+body.stanza-autori-americani {
+    background-image: url('autori_americani_background.jpg');
+}
+
+body.stanza-autori-americani::before {
+    background-image: url('autori_americani_background.jpg');
+}
+
+/* Stanza: Autori Italiani */
+body.stanza-autori-italiani {
+    background-image: url('autori_italiani_background.jpg');
+}
+
+body.stanza-autori-italiani::before {
+    background-image: url('autori_italiani_background.jpg');
+}
+
+
+
+
+/*----------- ----------- HEADER ----------- -----------*/
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    text-shadow: #000000 2px 2px;
+    padding: 1rem;
+    text-align: center;
+    z-index: 2;
+}
+
+header h1 {
+    color: #ffffff;
+    text-shadow: #000000 2px 2px;
+    margin: 1rem;
+    font-size: 3.5rem;
+    font-family: "Macondo", sans-serif;
+}
+
+/*----------- Menù -----------*/
+
+nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav .menu li {
+    display: inline;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav .menu a:hover {
+    color: #ff4500;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*----------- ----------- CONTENUTO PRINCIPALE ----------- -----------*/
+
+main {
+    display: block;
+    padding: 12rem 10rem;
+    text-align: center;
+    z-index: 2;
+}
+
+/*----------- Sezioni -----------*/
+
+.storia {
+    padding: 1rem 8%;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text h5 {
+    font-size: 0.9rem;
+    font-family: "Finger Paint", sans-serif;
+}
+
+.text ul {
+    list-style: disc inside;
+    margin: 1rem 0;
+}
+
+.image {
+    min-width: 50%;
+    max-width: 50%;
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/*----------- ----------- FOOTER ----------- -----------*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #cccccc;
+    text-align: center;
+    padding: 1rem 0;
+    text-shadow: #000000 2px 2px;
+    font-size: 1.5rem;
+}
+
+
+
+
+/*----------- ----------- TRANSIZIONE ----------- -----------*/
+
+#transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 100; /* Sopra tutti gli altri elementi */
+    opacity: 1; /* Opacità iniziale (nero pieno) */
+    pointer-events: none;
+    transition: opacity 1s ease-in-out; /* Durata e tipo della transizione */
+}
+
+#transition-overlay.hidden {
+    opacity: 0; /* Si dissolve */
+    pointer-events: none;
+}
+
+
+
+
+/*----------- ----------- DIAPOSITIVE ----------- -----------*/
+
+/*----------- Epoche -----------*/
+
+.epoche {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.epoche h2 {
+    font-family: "Macondo", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff4500;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.epoch-button {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Sedgwick Ave Display", sans-serif;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.epoch-button:hover {
+    background-color: #474747;
+    transform: scale(1.1);
+}
+
+/*----------- Diapositive -----------*/
+
+.diapositive-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.diapositive-wrapper {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.diapositiva {
+    position: relative;
+    transform: scale(0.9);
+    margin: 0 auto;
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.diapositiva.active {
+    display: block;
+}
+
+/* Background a tutto schermo */
+.diapositiva .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Panel in basso (strato con nome e testo) */
+.diapositiva .panel {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    border-radius: 5vh;
+    background: rgba(34, 8, 86, 0.655);
+    padding: 1.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.diapositiva .panel h2 {
+    font-family: "Sedgwick Ave Display", sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.diapositiva .panel p {
+    font-family: "Finger Paint", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* Frecce laterali per la navigazione */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.arrow.left-arrow {
+    left: 20px;
+}
+
+.arrow.right-arrow {
+    right: 20px;
+}
