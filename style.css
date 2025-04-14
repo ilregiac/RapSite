@@ -21,6 +21,12 @@
     font-style: normal;
 }
 
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /*----------- ----------- STILE BASE ----------- -----------*/
 
@@ -54,14 +60,14 @@ body::before {
 .h2 {
     color: #ffffff;
     text-shadow: #000000 2px 2px;
-    font-family: "Macondo", sans-serif;
+    font-family: "Special Gothic Expanded One", sans-serif;
     font-size: 2.5rem;
 }
 
 .p {
     color: #ffffff;
     text-shadow: #000000 2px 2px;
-    font-family: "Macondo", sans-serif;
+    font-family: "Special Gothic Expanded One", sans-serif;
     font-size: 1.5rem;
 }
 
