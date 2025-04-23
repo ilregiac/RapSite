@@ -1,5 +1,5 @@
 
-/*----------- ----------- SFONDI ----------- -----------*/
+/*----------- ----------- FONT ----------- -----------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Sedgwick+Ave&family=Sedgwick+Ave+Display&display=swap');
 
@@ -27,6 +27,23 @@
   font-style: normal;
 }
 
+/*----------- ----------- STANZA INDEX ----------- -----------*/
+
+.intro h2 {
+    text-shadow: #000000 2px 2px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 2rem;
+}
+
+.intro p {
+    text-shadow: #000000 2px 2px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.intro {
+    padding: 10% 0;
+}
 
 /*----------- ----------- STILE BASE ----------- -----------*/
 
@@ -58,7 +75,7 @@ body::before {
 }
 
 .h1 {
-    color: #921919;
+    color: #ffffff;
     text-shadow: #000000 2px 2px;
     font-family: "Special Gothic Expanded One", sans-serif;
 }
@@ -77,21 +94,9 @@ body::before {
     font-size: 1.5rem;
 }
 
-
-
-
 /*----------- ----------- STANZE ----------- -----------*/
 
 /*----------- Stanza Storia -----------*/
-
-body.stanza-storia {
-    background-color: #000;
-    background-image: url('rap_background_2.jpg');
-    background-size: 20rem auto;
-    background-repeat: repeat;
-    background-position: top left;
-    background-attachment: local;
-}
 
 body.stanza-storia::before {
     content: "";
@@ -101,18 +106,16 @@ body.stanza-storia::before {
     width: 100%;
     height: 100%;
     background-image: url('rap_background_2.jpg');
-    background-size: 33.33% auto;
+    background-size: 100% auto;
     background-repeat: repeat;
     background-position: top left;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
     z-index: -1;
-    opacity: 0.7;
     will-change: transform;
 }
 
-
-
+/*----------- Stanza Storia -----------*/
 
 /*----------- ----------- SFONDI ----------- -----------*/
 
@@ -134,32 +137,39 @@ body.stanza-descrizione::before {
 }
 
 /* Stanza: Autori Americani */
-body.stanza-autori-americani {
-    background-image: url('autori_americani_background.jpg');
+body.stanza-autori {
+    position: relative; /* Necessario per il posizionamento del ::before */
 }
 
-body.stanza-autori-americani::before {
-    background-image: url('autori_americani_background.jpg');
+body.stanza-autori::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('rap_background_4.jpg');
+    background-size: 50% auto;
+    background-repeat: repeat;
+    background-position: center;
+    filter: blur(1px);
+    -webkit-filter: blur(3px);
+    z-index: -1;
 }
-
-/* Stanza: Autori Italiani */
-body.stanza-autori-italiani {
-    background-image: url('autori_italiani_background.jpg');
-}
-
-body.stanza-autori-italiani::before {
-    background-image: url('autori_italiani_background.jpg');
-}
-
-
-
 
 /*----------- ----------- HEADER ----------- -----------*/
 
 header {
-    background-color: rgba(51, 51, 51, 0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0.5%;
+    width: 99%;
+    border-radius: 2.5vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem 0;
     text-shadow: #000000 2px 2px;
-    padding: 1rem;
     text-align: center;
     z-index: 2;
 }
@@ -201,9 +211,6 @@ nav .menu a:hover {
 }
 
 
-
-
-
 /*----------- ----------- CONTENUTO PRINCIPALE ----------- -----------*/
 
 main {
@@ -232,17 +239,22 @@ main {
 .text {
     flex: 1;
     font-size: 1.25rem;
+    text-shadow: #000000 2px 2px;
     text-align: justify;
 }
 
 .text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: #000000 4px 4px;
+    margin: 1rem;
+    font-size: 2.5rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
 }
 
 .text h5 {
-    font-size: 0.9rem;
-    font-family: "Finger Paint", sans-serif;
+    font-size: 1rem;
+    text-shadow: #000000 2px 2px;
+    font-family: "Special Gothic Expanded One", sans-serif;
 }
 
 .text ul {
@@ -272,18 +284,18 @@ main {
 footer {
     position: fixed;
     left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.8);
-    color: #cccccc;
-    text-align: center;
+    margin: 0.5%;
+    width: 99%;
+    border-radius: 2.5vh;
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 1rem 0;
+    color: #ffffff;
+    text-align: center;
     text-shadow: #000000 2px 2px;
-    font-size: 1.5rem;
-}
-
-
-
+    font-size: 1.15rem;
+} 
 
 /*----------- ----------- TRANSIZIONE ----------- -----------*/
 
@@ -306,15 +318,13 @@ footer {
 }
 
 
-
-
 /*----------- ----------- DIAPOSITIVE ----------- -----------*/
 
 /*----------- Epoche -----------*/
 
 .epoche {
     text-align: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .epoche h2 {
@@ -353,7 +363,7 @@ footer {
 .diapositive-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
 }
 

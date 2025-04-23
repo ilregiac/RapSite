@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Benvenuto nel sito dedicato al Rap e Hip-Hop!");
+    console.log("Tonight's the night. And it's going to happen again and again. Has to happen. Miami's a great town. Love the cuban food, pork sandwiches -- my favorite...but I'm hungry for something different now. My name is Dexter -- Dexter Morgan and I'm going to kill this man tonight.");
 });
 
-// Aggiungi l'overlay al caricamento della pagina
+// Aggiunge l'overlay al caricamento della pagina
 const overlay = document.createElement("div");
 overlay.id = "transition-overlay";
 document.body.appendChild(overlay);
