@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const diapositiveWrapper = document.getElementById("diapositive-wrapper");
+document.addEventListener("DOMContentLoaded", () => { //Aspetta che l'HTML sia caricato, poi esegui tutto il codice dentro questa parentesi
+    const diapositiveWrapper = document.getElementById("diapositive-wrapper"); //Trova la zona che conterrà le diapositive, le frecce, i pulsanti, ecc...
     const diapositiveContainer = document.getElementById("diapositive-container");
     const epochButtons = document.querySelectorAll(".epoch-button");
     const leftArrow = document.querySelector(".left-arrow");
